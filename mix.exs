@@ -30,7 +30,8 @@ defmodule NimbleTOTP.MixProject do
 
   defp deps do
     [
-      {:ex_doc, ">= 0.19.0", only: :docs}
+      {:ex_doc, ">= 0.19.0", only: :docs},
+      {:fips_crypto, git: "git@github.com:PreVeil/fips-elixir", tag: "latest"}
     ]
   end
 
